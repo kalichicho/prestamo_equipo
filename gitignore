@@ -1,0 +1,29 @@
+
+# Archivos del sistema y temporales
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*.cache
+*.zip
+
+# Configuración sensible
+prestamo/config/database.php
+
+# Librerías externas que no deben subirse
+prestamo/libs/fpdf/
+
+# Archivos generados (PDFs, exportaciones, etc)
+*.pdf
+
+# Imágenes y estructuras usadas como referencia
+*.jpg
+*.png
+
+# Directorios ocultos o de control
+.idea/
+.vscode/
+
+# Ignorar archivos de sesiones o cookies PHP si existen
+sess_*
