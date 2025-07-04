@@ -1,0 +1,16 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h2 small {
+    font-size: 0.75em;
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  
+  .alert {
+    margin-top: 1rem;
+  }
+  

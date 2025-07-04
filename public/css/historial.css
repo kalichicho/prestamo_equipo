@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  #buscar_usuario {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #resultados_usuario {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 3;
+  }
+  

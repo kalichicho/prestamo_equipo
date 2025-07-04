@@ -1,0 +1,12 @@
+svg {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  #ojo-izquierdo,
+  #ojo-derecho {
+    transition: all 0.1s ease;
+  }
+  

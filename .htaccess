@@ -1,0 +1,18 @@
+# Activar URLs limpias y seguridad básica
+RewriteEngine On
+RewriteBase /
+
+# Redirigir /controlador/accion → index.php?c=controlador&a=accion
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?([^/]*)$ index.php?c=$1&a=$2 [QSA,L]
+
+# Seguridad: bloquear archivos sensibles
+<FilesMatch "\.(env|ini|log|sh|sql|bak|zip)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Charset y cabeceras recomendadas
+AddDefaultCharset UTF-8
+Header set X-Content-Type-Options "nosniff"
