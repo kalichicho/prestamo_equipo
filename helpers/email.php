@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once 'libs/phpmailer/PHPMailer.php';
-require_once 'libs/phpmailer/SMTP.php';
-require_once 'libs/phpmailer/Exception.php';
+require_once 'libs/phpMailer/PHPMailer.php';
+require_once 'libs/phpMailer/SMTP.php';
+require_once 'libs/phpMailer/Exception.php';
 
 // 📬 Envía el PDF del préstamo al correo del usuario
 function enviarCorreoConPDF($correoDestino, $rutaPDF, $nombre = "Empleado", $asunto = "Resumen de préstamo")

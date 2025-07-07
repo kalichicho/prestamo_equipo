@@ -1,8 +1,8 @@
 <?php
 require_once 'libs/fpdf/fpdf.php';
-require_once 'libs/phpmailer/PHPMailer.php';
-require_once 'libs/phpmailer/SMTP.php';
-require_once 'libs/phpmailer/Exception.php';
+require_once 'libs/phpMailer/PHPMailer.php';
+require_once 'libs/phpMailer/SMTP.php';
+require_once 'libs/phpMailer/Exception.php';
 require_once 'helpers/auth.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
