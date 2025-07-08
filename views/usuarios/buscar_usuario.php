@@ -8,6 +8,7 @@
 
     <!-- CSS para modo oscuro -->
     <link rel="stylesheet" href="public/css/tema.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -20,7 +21,7 @@
                 ← Volver
             </a>
             <button id="toggle-dark-mode" class="btn btn-outline-secondary">
-                🌓 Modo oscuro
+                <i class="bi bi-moon-fill"></i>
             </button>
         </div>
 

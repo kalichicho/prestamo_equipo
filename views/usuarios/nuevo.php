@@ -6,13 +6,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS para modo oscuro -->
   <link rel="stylesheet" href="public/css/tema.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-light">
   <div class="container mt-5">
     <h2 class="mb-4">Dar de alta nuevo usuario</h2>
     <div class="d-flex justify-content-end align-items-center gap-2 mb-3">
       <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">← Volver</a>
-      <button id="toggle-dark-mode" class="btn btn-outline-secondary">🌓 Modo oscuro</button>
+      <button id="toggle-dark-mode" class="btn btn-outline-secondary"><i class="bi bi-moon-fill"></i></button>
     </div>
 
     <?php if (!empty($_SESSION['error'])): ?>
