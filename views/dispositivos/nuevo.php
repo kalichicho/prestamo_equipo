@@ -20,7 +20,7 @@
             <a href="index.php?c=dispositivo&a=index" class="btn btn-outline-secondary">
                 ← Volver
             </a>
-            <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode">
+            <button id="toggle-dark-mode" aria-label="Modo oscuro" class="btn btn-outline-secondary btn-dark-mode">
                 <i class="bi bi-moon-fill"></i>
             </button>
         </div>

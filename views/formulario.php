@@ -53,7 +53,7 @@
       <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary btn-top">
         <i class="bi bi-arrow-left"></i> Volver
       </a>
-      <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode btn-top">
+      <button id="toggle-dark-mode" aria-label="Modo oscuro" class="btn btn-outline-secondary btn-dark-mode btn-top">
         <i class="bi bi-moon-fill"></i>
       </button>
     </div>

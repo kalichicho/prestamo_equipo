@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!toggle) return;
     if (document.body.classList.contains('dark-mode')) {
       toggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+      toggle.setAttribute('aria-label', 'Modo claro');
     } else {
       toggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+      toggle.setAttribute('aria-label', 'Modo oscuro');
     }
   };
 

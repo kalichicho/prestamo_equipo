@@ -62,7 +62,7 @@
         </a>
       <?php endif; ?>
 
-      <button id="toggle-dark-mode" class="btn btn-outline-dark btn-dark-mode">
+      <button id="toggle-dark-mode" aria-label="Modo oscuro" class="btn btn-outline-dark btn-dark-mode">
         <i class="bi bi-moon-fill"></i>
       </button>
     </div>
