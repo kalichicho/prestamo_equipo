@@ -7,6 +7,8 @@
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/tema.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-light">
