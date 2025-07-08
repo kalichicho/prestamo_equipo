@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS para modo oscuro -->
     <link rel="stylesheet" href="public/css/tema.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -20,7 +19,7 @@
                 ← Volver
             </a>
             <button id="toggle-dark-mode" class="btn btn-outline-secondary">
-                <i class="bi bi-moon-fill"></i>
+                🌓 Modo oscuro
             </button>
         </div>
 

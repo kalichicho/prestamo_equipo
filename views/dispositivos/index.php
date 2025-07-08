@@ -14,7 +14,6 @@
 
   <!-- Tema oscuro -->
   <link rel="stylesheet" href="public/css/tema.css">
-  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     body.dark-mode #toggle-dark-mode { color: #d1d1d1; border-color: #333; }
@@ -51,7 +50,7 @@
           <i class="bi bi-arrow-left"></i> Volver
         </a>
         <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-top">
-          <i class="bi bi-moon-fill"></i>
+          <i class="bi bi-moon-stars"></i>
         </button>
       </div>
     </div>
