@@ -139,18 +139,6 @@
           </a>
         </div>
 
-        <?php if ($_SESSION['rol'] === 'administrador'): ?>
-        <!-- Alta de usuarios -->
-        <div class="col-md-4">
-          <a href="index.php?c=usuario&a=nuevo" class="text-decoration-none text-dark">
-            <div class="card text-center p-4 dashboard-card shadow-sm">
-              <div class="dashboard-icon"><i class="bi bi-person-plus"></i></div>
-              <h5 class="card-title">Alta de usuarios</h5>
-            </div>
-          </a>
-        </div>
-        <?php endif; ?>
-
         <!-- Nueva: Alertas de Seguridad -->
         <div class="col-md-4">
           <a href="index.php?c=alertas&a=index" class="text-decoration-none text-dark">
