@@ -182,4 +182,42 @@ class UsuarioController
 
         require 'views/usuarios/firma.php';
     }
+
+    // 🆕 Formulario para dar de alta a un nuevo usuario (solo administradores)
+    public function nuevo()
+    {
+        if (!esAdministrador()) {
+            header('Location: index.php?c=auth&a=login');
+            exit;
+        }
+
+        require 'views/usuarios/nuevo.php';
+    }
+
+    // 🆕 Procesa el alta de un nuevo usuario
+    public function guardar()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && esAdministrador()) {
+            $nombre      = trim($_POST['nombre'] ?? '');
+            $email       = trim($_POST['email'] ?? '');
+            $contrasena  = $_POST['contrasena'] ?? '';
+            $rol         = $_POST['rol'] ?? 'empleado';
+
+            if ($nombre === '' || $email === '' || $contrasena === '') {
+                $_SESSION['error'] = 'Todos los campos son obligatorios.';
+                require 'views/usuarios/nuevo.php';
+                return;
+            }
+
+            if (Usuario::existeEmail($email)) {
+                $_SESSION['error'] = 'El email ya está registrado.';
+                require 'views/usuarios/nuevo.php';
+                return;
+            }
+
+            Usuario::crear($nombre, $email, $contrasena, $rol);
+            header('Location: index.php?c=prestamo&a=dashboard');
+            exit;
+        }
+    }
 }
