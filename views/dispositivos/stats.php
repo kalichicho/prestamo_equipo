@@ -5,8 +5,6 @@
     <title>Estadísticas de Dispositivos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="public/css/tema.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .stat-card { border-radius:12px; transition:all .3s; background:#fff; }
         .stat-card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,.08); }
@@ -22,7 +20,7 @@
         <h2 class="text-primary fw-bold">📊 Estadísticas de Dispositivos</h2>
         <div class="d-flex justify-content-end gap-2 mb-3">
             <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">← Volver</a>
-            <button id="toggle-dark-mode" class="btn btn-outline-secondary"><i class="bi bi-moon-fill"></i></button>
+            <button id="toggle-dark-mode" class="btn btn-outline-secondary">🌓 Modo oscuro</button>
         </div>
         <div class="mb-4 text-end">
             <form method="GET" action="index.php" style="display:inline;">

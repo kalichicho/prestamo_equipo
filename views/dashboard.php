@@ -10,7 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- CSS para modo oscuro -->
   <link rel="stylesheet" href="public/css/tema.css">
-  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     .dashboard-card {
@@ -63,7 +62,7 @@
       <?php endif; ?>
 
       <button id="toggle-dark-mode" class="btn btn-outline-dark">
-        <i class="bi bi-moon-fill"></i>
+        <i class="bi bi-moon-stars"></i>
       </button>
     </div>
 

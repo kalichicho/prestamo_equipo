@@ -6,7 +6,6 @@
     <title>Tareas pendientes por revisar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="public/css/tema.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-light">
@@ -17,7 +16,7 @@
     <!-- Botones: Volver + Modo oscuro -->
     <div class="d-flex justify-content-end align-items-center gap-2 mb-3">
         <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">← Volver</a>
-        <button id="toggle-dark-mode" class="btn btn-outline-secondary"><i class="bi bi-moon-fill"></i></button>
+        <button id="toggle-dark-mode" class="btn btn-outline-secondary">🌓 Modo oscuro</button>
     </div>
 
     <!-- 🔎 Filtros por fecha -->
