@@ -10,6 +10,7 @@
 
     <!-- CSS para modo oscuro -->
     <link rel="stylesheet" href="public/css/tema.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -18,7 +19,7 @@
         <h2 class="mb-4">Mis Préstamos y Devoluciones</h2>
         <!-- Botón para cambiar modo -->
         <div class="text-end mb-3">
-            <button id="toggle-dark-mode" class="btn btn-outline-secondary">🌓 Modo oscuro</button>
+            <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode"><i class="bi bi-moon-fill"></i></button>
         </div>
 
 

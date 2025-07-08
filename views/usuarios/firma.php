@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Configurar Firma</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/tema.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         #canvasFirma {
             border: 2px dashed #ccc;

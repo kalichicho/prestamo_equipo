@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="public/css/buscar_asignado.css">
   <!-- CSS para modo oscuro -->
   <link rel="stylesheet" href="public/css/tema.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -24,8 +25,8 @@
       <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">
         ← Volver
       </a>
-      <button id="toggle-dark-mode" class="btn btn-outline-secondary">
-        🌓 Modo oscuro
+      <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode">
+        <i class="bi bi-moon-fill"></i>
       </button>
     </div>
 
