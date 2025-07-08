@@ -13,7 +13,7 @@
     <h2 class="mb-4">Dar de alta nuevo usuario</h2>
     <div class="d-flex justify-content-end align-items-center gap-2 mb-3">
       <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">← Volver</a>
-      <button id="toggle-dark-mode" class="btn btn-outline-secondary"><i class="bi bi-moon-fill"></i></button>
+      <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode"><i class="bi bi-moon-fill"></i></button>
     </div>
 
     <?php if (!empty($_SESSION['error'])): ?>

@@ -20,7 +20,7 @@
 <body class="bg-light">
   <!-- Botón para cambiar modo -->
   <div class="text-end mb-3">
-    <button id="toggle-dark-mode" class="btn btn-outline-secondary"><i class="bi bi-moon-fill"></i></button>
+    <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode"><i class="bi bi-moon-fill"></i></button>
   </div>
 
 

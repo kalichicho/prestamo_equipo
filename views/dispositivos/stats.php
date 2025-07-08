@@ -22,7 +22,7 @@
         <h2 class="text-primary fw-bold">📊 Estadísticas de Dispositivos</h2>
         <div class="d-flex justify-content-end gap-2 mb-3">
             <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">← Volver</a>
-            <button id="toggle-dark-mode" class="btn btn-outline-secondary"><i class="bi bi-moon-fill"></i></button>
+            <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode"><i class="bi bi-moon-fill"></i></button>
         </div>
         <div class="mb-4 text-end">
             <form method="GET" action="index.php" style="display:inline;">

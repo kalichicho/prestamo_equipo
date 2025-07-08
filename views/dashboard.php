@@ -62,16 +62,16 @@
         </a>
       <?php endif; ?>
 
-      <button id="toggle-dark-mode" class="btn btn-outline-dark">
+      <button id="toggle-dark-mode" class="btn btn-outline-dark btn-dark-mode">
         <i class="bi bi-moon-fill"></i>
       </button>
     </div>
 
     <!-- Grid de tarjetas -->
-    <div class="row g-4">
+    <div class="grid-responsive">
       <?php if (in_array($_SESSION['rol'], ['administrador','tecnico'])): ?>
         <!-- Registrar préstamo/devolución -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=prestamo&a=crear" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-journal-plus"></i></div>
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Historial de movimientos -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=prestamo&a=historial" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-clock-history"></i></div>
@@ -91,7 +91,7 @@
         </div>
 
         <!-- Gestión de dispositivos -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=dispositivo&a=index" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-laptop"></i></div>
@@ -101,7 +101,7 @@
         </div>
 
         <!-- Buscar dispositivos por usuario -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=usuario&a=asignados" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-person-lines-fill"></i></div>
@@ -111,7 +111,7 @@
         </div>
 
         <!-- Mis dispositivos asignados -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=usuario&a=asignadosActuales" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-box-seam"></i></div>
@@ -121,7 +121,7 @@
         </div>
 
         <!-- Buscar por etiqueta o serie -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=dispositivo&a=buscarAsignado" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-search"></i></div>
@@ -131,7 +131,7 @@
         </div>
 
         <!-- Stats de dispositivos -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=dispositivo&a=stats" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-bar-chart-line"></i></div>
@@ -142,7 +142,7 @@
 
         <?php if ($_SESSION['rol'] === 'administrador'): ?>
         <!-- Alta de usuarios -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=usuario&a=nuevo" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-person-plus"></i></div>
@@ -153,7 +153,7 @@
         <?php endif; ?>
 
         <!-- Nueva: Alertas de Seguridad -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=alertas&a=index" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm border-danger">
               <div class="dashboard-icon text-danger"><i class="bi bi-shield-lock"></i></div>
@@ -164,7 +164,7 @@
 
       <?php else: ?>
         <!-- Empleado: Historial de movimientos -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=usuario&a=misPrestamos" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-clock-history"></i></div>
@@ -174,7 +174,7 @@
         </div>
 
         <!-- Empleado: Mis dispositivos asignados -->
-        <div class="col-md-4">
+        <div>
           <a href="index.php?c=usuario&a=asignadosActuales" class="text-decoration-none text-dark">
             <div class="card text-center p-4 dashboard-card shadow-sm">
               <div class="dashboard-icon"><i class="bi bi-box-seam"></i></div>
@@ -185,7 +185,7 @@
       <?php endif; ?>
 
       <!-- Cerrar sesión -->
-      <div class="col-md-4 <?php if(!in_array($_SESSION['rol'], ['administrador','tecnico'])) echo 'offset-md-4'; ?>">
+      <div>
         <a href="index.php?c=auth&a=logout" class="text-decoration-none">
           <div class="card text-center p-4 dashboard-card shadow-sm border-danger">
             <div class="dashboard-icon text-danger"><i class="bi bi-box-arrow-right"></i></div>

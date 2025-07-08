@@ -28,7 +28,7 @@
       <a href="index.php?c=prestamo&a=dashboard" class="btn btn-outline-secondary">
         ← Volver
       </a>
-      <button id="toggle-dark-mode" class="btn btn-outline-secondary">
+      <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-dark-mode">
         <i class="bi bi-moon-fill"></i>
       </button>
     </div>
