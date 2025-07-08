@@ -23,27 +23,4 @@ class Usuario
         $sql = "SELECT id, nombre, email FROM usuarios";
         return $conn->query($sql)->fetch_all(MYSQLI_ASSOC);
     }
-
-    // Comprueba si existe un usuario con el email indicado
-    public static function existeEmail($email)
-    {
-        require 'config/database.php';
-        $stmt = $conn->prepare("SELECT id FROM usuarios WHERE email = ?");
-        $stmt->bind_param("s", $email);
-        $stmt->execute();
-        $stmt->store_result();
-        return $stmt->num_rows > 0;
-    }
-
-    // Crea un nuevo usuario en la base de datos
-    public static function crear($nombre, $email, $contrasena, $rol)
-    {
-        require 'config/database.php';
-        $hash = password_hash($contrasena, PASSWORD_DEFAULT);
-        $stmt = $conn->prepare(
-            "INSERT INTO usuarios (nombre, email, contraseña, rol) VALUES (?, ?, ?, ?)"
-        );
-        $stmt->bind_param("ssss", $nombre, $email, $hash, $rol);
-        $stmt->execute();
-    }
 }
